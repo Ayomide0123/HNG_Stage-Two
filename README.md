@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# MovieBox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An online movie discovery platform that allows users to conveniently search for, access extensive movie information, and build their personal library of favorite films. To deliver an informative visual experience, the app smoothly incorporates data from the TMDB API.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Aesthetically pleasing and functional user interface
+- The homepage is a list of top movies
+- Search feature that allows users to search for movies by title
+- loading indicator while fetching search results
+- Info on the movie, including its title, release date (UTC format), duration (in minutes), and synopsis
+- Integrated with The Movie Database (TMDb) API to fetch movie info
+- Displays error messages to users in the event of API errors or other problems.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup:
 
-### `npm test`
+You will need to download and install `node` and `npm` on your system.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone down this repository. 
 
-### `npm run build`
+```bash
+  git clone hhttps://github.com/dapoadedire/hngx-stage-ii.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to the directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd HNG_Stage-Two
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the server
 
-## Learn More
+```bash
+  npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The click on the link to the local development server <http://localhost:3000/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+React, Bootstrap, TMDB API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/1bb30308-ef6e-4285-946b-322e1422337d)
 
-### Making a Progressive Web App
+![image](https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/726ac337-f89e-47ec-a37f-81f39bc249b0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![image](https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/a345a50b-807d-4c30-a554-ba7858a1ec6e)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/dapoadedire/hngx-stage-ii/assets/95668340/022aeb3a-caac-4be2-8a1f-439926a6611d)
