@@ -21,7 +21,7 @@ You will need to download and install `node` and `npm` on your system.
 Clone down this repository. 
 
 ```bash
-  git clone hhttps://github.com/dapoadedire/hngx-stage-ii.git
+  git clone https://github.com/Ayomide0123/HNG_Stage-Two.git
 ```
 
 
