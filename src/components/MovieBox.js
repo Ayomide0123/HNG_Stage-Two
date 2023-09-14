@@ -24,6 +24,8 @@ const MovieBox = ({movie, title, poster_path, vote_average, release_date, overvi
         transition: 'background-color 0.3s ease',
       };
 
+      const releaseDate = new Date(release_date);
+      const utcDate = releaseDate.toUTCString();
     return(
         <>
         
@@ -36,17 +38,17 @@ const MovieBox = ({movie, title, poster_path, vote_average, release_date, overvi
                 <img className="movie_poster" src={API_IMG+poster_path} alt="movie_poster" data-testid= "movie-poster"/>
             </div>
             <div className="">
-                <p className="region label" data-testid= "movie-release-date">USA, {release_date}</p>
+                <p className="region label" data-testid= "movie-release-date">USA, {utcDate}</p>
 
                 <h1 key={id}><Link to={`/movies/${id}`} className="text-dark text-decoration-none movie_title" data-testid= "movie-title">{title}</Link></h1>
                 <div className="ratings">
                     <div className="imdb">
                         <img src={imdb_logo} alt="imdb_Logo"/>
-                        <p>86.0 / 100</p>
+                        <p>{vote_average * 10} / 100</p>
                     </div>
                     <div className="tomatoes">
                         <img src={tomatoes_img} alt="rottenTomatoes_Logo"/>
-                        <p>97%</p>
+                        <p>{vote_average * 10}%</p>
                     </div>
                 </div>
                 <p className="label">{

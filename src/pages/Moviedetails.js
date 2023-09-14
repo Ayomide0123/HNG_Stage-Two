@@ -19,9 +19,6 @@ const API_IMG = 'https://image.tmdb.org/t/p/w500/'
 
 
 
-
-
-
 const Moviedetails = ({movie}) => {
   const { id } = useParams();
   const [movies, setMovies] = useState(null);
@@ -42,6 +39,10 @@ const Moviedetails = ({movie}) => {
     if (!movies) {
       return <div>Loading...</div>;
     }
+
+
+    const releaseDate = new Date(movies.release_date);
+    const utcDate = releaseDate.toUTCString();
     
 
   return (
@@ -122,7 +123,7 @@ const Moviedetails = ({movie}) => {
           <div className='d-flex justify-content-between'>
             <div className='d-flex justify-content-between align-items-baseline'>
                 <h4 data-testid= "movie-title">{movies.title}</h4>●
-                <h4 data-testid= "movie-release-date">{movies.release_date}</h4>●
+                <h4 data-testid= "movie-release-date">{utcDate}</h4>●
                 <h4>PG-13</h4>●
                 <h4 data-testid= "movie-runtime">{movies.runtime} minutes</h4>
                 <p className="genre">Action</p>
@@ -130,7 +131,7 @@ const Moviedetails = ({movie}) => {
 
             <div className='d-flex align-items-baseline'>
               <img src={star} alt="star_image" width="25px" height="25px"/>
-              <p><span className='text-secondary'>8.5</span> | 350k</p>
+              <p><span className='text-secondary'>{movies.vote_count/1000}</span> | 350k</p>
             </div>
           </div>
           
