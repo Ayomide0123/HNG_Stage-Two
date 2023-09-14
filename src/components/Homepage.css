@@ -441,3 +441,16 @@
   font-weight: 500;
   font-size: large;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 2rem;
+  font-size: large;
+  font-weight: 700;
+}
+.footer_items {
+  gap: 2rem;
+}

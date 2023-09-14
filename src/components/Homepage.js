@@ -6,6 +6,10 @@ import play_icon from '../assets/icon/play_icon.svg';
 import menu_icon from '../assets/icon/menu_icon.svg';
 import right_arrow from '../assets/icon/right_arrow.svg';
 import imdb_logo from '../assets/img/imdb_logo.png';
+import facebook from '../assets/img/facebook.svg';
+import instagram from '../assets/img/instagram.svg';
+import twitter from '../assets/img/twitter.svg';
+import youtube from '../assets/img/youtube.svg';
 import tomatoes_img from '../assets/img/tomatoes.png';
 import './Homepage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -137,12 +141,33 @@ function Homepage() {
         <div className="container">
           <div className="grid">
             {movies.map((movieReq)=><MovieBox key={movieReq.id} {...movieReq}/>)}
-            {/* <Link to="/movie/:id">ugvghjghg</Link> */}
           </div>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+
+        <div className="footer">
+
+
+          <div className="d-flex footer_items">
+            <div> <img src={facebook} alt="facebook" width="30px" height="30px"/></div>
+            <div> <img src={instagram} alt="instagram" width="30px" height="30px"/></div>
+            <div> <img src={twitter} alt="twitter" width="30px" height="30px"/></div>
+            <div> <img src={youtube} alt="youtube" width="30px" height="30px"/></div>
+          </div>
+
+          <div className="d-flex footer_items">
+            <p>Conditions of Use</p>
+            <p>Privacy &amp; Policy</p>
+            <p>Press Room</p>
+          </div>
+
+          <div>
+            <p className="text-black-50">&copy; 2021 MovieBox by Adriana Eka Prayudha</p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
