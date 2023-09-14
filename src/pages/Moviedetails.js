@@ -114,7 +114,7 @@ const Moviedetails = ({movie}) => {
           <div className='watch_trailer'>
             <img className="movie_backdrop" src={API_IMG+movies.backdrop_path} alt="movie_backdrop"/>
             <div className='play_button'>
-              <img src={play_icon} className='play_icon'/>
+              <img src={play_icon} className='play_icon' alt='play_button'/>
               <p className='play_trailer'>Watch Trailer</p>
             </div>
           </div>
