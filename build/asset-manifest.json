@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6d112530.css",
+    "main.js": "/static/js/main.82d1cc48.js",
+    "static/media/john_wick.png": "/static/media/john_wick.a37f7a10b6a2578ccf01.png",
+    "static/media/best_movies.png": "/static/media/best_movies.ca550f0f60be8fe87421.png",
+    "static/media/menu_icon.svg": "/static/media/menu_icon.9f31ea026f5c6f4442c9c85fa02e39d7.svg",
+    "static/media/play_icon.svg": "/static/media/play_icon.9417147bc6d0510a775f9e5eccfb8099.svg",
+    "index.html": "/index.html",
+    "static/media/heart.svg": "/static/media/heart.ef8b7428d782f9c7172429c9a33cc79a.svg",
+    "static/media/search_icon.svg": "/static/media/search_icon.f811fa2f52903f84c67403966d5b2639.svg",
+    "static/media/right_arrow.svg": "/static/media/right_arrow.5b8f3ede2046c9b49516828baf09a822.svg",
+    "main.6d112530.css.map": "/static/css/main.6d112530.css.map",
+    "main.82d1cc48.js.map": "/static/js/main.82d1cc48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d112530.css",
+    "static/js/main.82d1cc48.js"
+  ]
+}
